@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace c0730227
@@ -10,6 +11,16 @@ namespace c0730227
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Peter rules the IT Universe");
+            Download();
+            Console.ReadLine();
+        }
+        static void Download()
+        {
+           
+            Thread.Sleep(7000);
+            Console.WriteLine("Download complete");
+            //
         }
     }
 }
